@@ -50,7 +50,7 @@ const Header = ({ siteTitle }) => (
         alignItems: 'center'
       }}>
         <Vane11opeStyles>
-          <Image />
+          <img src={require('../images/vane11ope.png')} alt="" />
         </ Vane11opeStyles>
         <TitleStyles>
           {siteTitle}
