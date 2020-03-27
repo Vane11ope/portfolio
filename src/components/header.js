@@ -28,6 +28,21 @@ const TitleStyles = styled.div`
   animation: ${SecondWave} 3s linear infinite;
 `;
 
+function RandomFace() {
+  let faces = ["(๑>◡<๑)", "(๑•ૅㅁ•๑)", "♪(๑ᴖ◡ᴖ๑)♪", "٩(๑❛ᴗ❛๑)۶", "(๑•ૅ◡•๑)"];
+  let face;
+  let times = Math.floor(Math.random() * Math.floor(5));
+  face = faces[times];
+  return (
+    <div style={{
+      fontFamily: 'sans-serif',
+      paddingLeft: '14vmin',
+    }}>
+      <br/><br/>{face}
+    </div>
+  )
+}
+
 const Header = ({ siteTitle }) => (
   <header
     style={{
@@ -40,22 +55,21 @@ const Header = ({ siteTitle }) => (
         margin: `0 auto`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ 
         margin: 0,
         color: 'rgb(249, 239, 232)',
         display: 'flex',
         flexDirection: 'row',
-        alignItems: 'center'
-      }}>
-        <Vane11opeStyles>
-          <img src={require('../images/vane11ope.png')} alt="" />
-        </ Vane11opeStyles>
-        <TitleStyles>
-          {siteTitle}
-        </TitleStyles>
-      </h1>
+        alignItems: 'center',
+        fontSize: '2.25rem',
+      }}
+    >
+      <Vane11opeStyles>
+        <img src={require('../images/vane11ope.png')} alt="" />
+      </ Vane11opeStyles>
+      <TitleStyles>
+        {siteTitle}
+        <RandomFace />
+      </TitleStyles>
     </div>
   </header>
 )
