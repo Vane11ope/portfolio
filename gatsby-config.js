@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `ヴァネロピのポートフォリオっ(๑>◡<๑)`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Just a portfolio of Vane11ope`,
+    author: `Vane11ope`,
   },
   plugins: [
     `gatsby-plugin-typescript`,
