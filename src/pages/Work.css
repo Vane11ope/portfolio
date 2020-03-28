@@ -1,0 +1,50 @@
+#twitter {
+  position:relative;
+  height:256px;
+  width:256px;
+}
+
+#twitter img {
+  position:absolute;
+}
+
+@keyframes twitterFadeInOut0 {
+  0% {
+    opacity:1;
+  }
+  49% {
+    opacity:1;
+  }
+  50% {
+    opacity:0;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@keyframes twitterFadeInOut1 {
+  0% {
+    opacity:0;
+  }
+  49% {
+    opacity:0;
+  }
+  50% {
+    opacity:1;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+#twitter img.bottom {
+animation-name: twitterFadeInOut0;
+    animation-iteration-count: infinite;
+animation-duration: 1s;
+}
+#twitter img.top{
+    animation-name: twitterFadeInOut1;
+animation-iteration-count: infinite;
+animation-duration: 1s;
+}

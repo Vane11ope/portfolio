@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import SEO from "../components/seo"
 import styled, { keyframes } from "styled-components"
+import "./Work.css"
 
 const Flash = keyframes`
     0%, 25%, 75%, 100% {
@@ -28,12 +29,22 @@ const Container = styled.div`
   border-radius: 10px;
 `;
 
+const twitterIcon = () => {
+  return (
+    <a href="https://twitter.com/vane11ope">
+      <div id="twitter">
+        <img class="bottom" src={require('../images/twitter_0.png')} alt="" />
+        <img class="top" src={require('../images/twitter_1.png')} alt="" />
+      </div>
+    </a>
+  )
+}
+
 const Work = () => (
   <>
     <Container>
-      <FlashStyles>
-        <h1>じんせいのしんちょく</h1>
-      </FlashStyles>
+      <h1>じんせいのしんちょく</h1>
+      {twitterIcon()}
     </Container>
   </>
 )
