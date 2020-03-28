@@ -1,7 +1,24 @@
 import React from "react"
 import { Link } from "gatsby"
 import SEO from "../components/seo"
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components"
+
+const FaceWave = keyframes`
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(0deg); }
+  55% { transform: rotate(0deg); }
+  60% { transform: rotate(-25deg); }
+  65% { transform: rotate(25deg); }
+  70% { transform: rotate(0deg); }
+  80% { transform: rotate(0deg); }
+  85% { transform: rotate(25deg); }
+  90% { transform: rotate(-25deg); }
+  95% { transform: rotate(0deg); }
+`;
+
+const FaceStyles = styled.div` 
+  animation: ${FaceWave} 2s linear infinite;
+`;
 
 function RandomFace() {
     let faces = ["(๑>◡<๑)", "(๑•ૅㅁ•๑)", "♪(๑ᴖ◡ᴖ๑)♪", "٩(๑❛ᴗ❛๑)۶", "(๑•ૅ◡•๑)"];
@@ -11,9 +28,11 @@ function RandomFace() {
         <div style={{
             fontFamily: 'sans-serif',
             fontSize: '8rem',
-            paddingTop: '5vmin' 
+            paddingTop: '10vmin' 
         }}>
-            <br /><br />{face}
+            <FaceStyles>
+            {face}
+            </FaceStyles>
         </div>
     )
 }
