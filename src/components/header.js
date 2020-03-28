@@ -4,17 +4,16 @@ import styled, { keyframes } from "styled-components"
 
 const Vane11opeWave = keyframes`
   0% { transform: rotate(0deg); }
-  40% { transform: rotate(0deg); }
-  50% { transform: rotate(25deg); }
-  60% { transform: rotate(-25deg); }
-  70% { transform: rotate(0deg); }
+  60% { transform: rotate(0deg); }
+  70% { transform: rotate(25deg); }
+  80% { transform: rotate(-25deg); }
+  90% { transform: rotate(0deg); }
 `;
 
 const TitleWave = keyframes`
   0% { transform: rotate(0deg); }
-  35% { transform: rotate(0deg); }
-  45% { transform: rotate(20deg); }
-  55% { transform: rotate(0deg); }
+  10% { transform: rotate(20deg); }
+  20% { transform: rotate(0deg); }
 `;
 
 const Vane11opeStyles = styled.div` 

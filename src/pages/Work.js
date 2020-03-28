@@ -17,7 +17,6 @@ const Container = styled.div`
 
 const Work = () => (
   <>
-    <SEO title="Work" />
     <Container>
       <h1>じんせいのしんちょく</h1>
     </Container>

@@ -32,7 +32,6 @@ const Container = styled.div`
 
 const Today = () => (
     <>
-        <SEO title="Today" />
         <Container>
             <h1>きょうのヴァネロピ(とくに意味はない)</h1>
             <RandomFace/>
