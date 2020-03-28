@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 import Work from "../pages/Work"
+import Today from "../pages/Today"
 
 const Layout = ({}) => {
   const data = useStaticQuery(graphql`
@@ -36,6 +37,7 @@ const Layout = ({}) => {
           alignItems: 'center'
         }}
       >
+      <Today />
       <Work />
       </div>
     </>

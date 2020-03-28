@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import SEO from "../components/seo"
-import styled, { keyframes } from "styled-components"
+import styled from "styled-components"
 
 const Container = styled.div`
   width: 80vmin;

@@ -2,41 +2,46 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled, { keyframes } from "styled-components"
 
-const FirstWave = keyframes`
-    0% { transform: rotate(0deg); }
-    40% { transform: rotate(0deg); }
-    50% { transform: rotate(25deg); }
-    60% { transform: rotate(-25deg); }
-    70% { transform: rotate(0deg); }
+const Vane11opeWave = keyframes`
+  0% { transform: rotate(0deg); }
+  40% { transform: rotate(0deg); }
+  50% { transform: rotate(25deg); }
+  60% { transform: rotate(-25deg); }
+  70% { transform: rotate(0deg); }
 `;
 
-const SecondWave = keyframes`
-    0% { transform: rotate(0deg); }
-    65% { transform: rotate(0deg); }
-    75% { transform: rotate(10deg); }
-    85% { transform: rotate(-10deg); }
-    95% { transform: rotate(0deg); }
+const TitleWave = keyframes`
+  0% { transform: rotate(0deg); }
+  65% { transform: rotate(0deg); }
+  75% { transform: rotate(20deg); }
+  85% { transform: rotate(0deg); }
 `;
 
 const Vane11opeStyles = styled.div` 
-  animation: ${FirstWave} 3s linear infinite;
+  animation: ${Vane11opeWave} 3s linear infinite;
 `;
 
 const TitleStyles = styled.div` 
-  animation: ${SecondWave} 3s linear infinite;
+  animation: ${TitleWave} 3s linear infinite;
+  animation-delay: ${props => props.delay};
 `;
 
-function RandomFace() {
-  let faces = ["(๑>◡<๑)", "(๑•ૅㅁ•๑)", "♪(๑ᴖ◡ᴖ๑)♪", "٩(๑❛ᴗ❛๑)۶", "(๑•ૅ◡•๑)"];
-  let times = Math.floor(Math.random() * Math.floor(5));
-  let face = faces[times];
+const Wave = ({str}) => { 
+  let list = [];
+  let delay = 2;
+  for (let i = 0; i < str.length; ++i) {
+    let char = str.charAt(i);
+    delay += i / 64;
+    list.push(
+      <TitleStyles delay={delay.toString() + 's'}>
+        {char}
+      </TitleStyles>
+    )
+  }
   return (
-    <div style={{
-      fontFamily: 'sans-serif',
-      paddingLeft: '14vmin',
-    }}>
-      <br/><br/>{face}
-    </div>
+    <>
+      {list}
+    </>
   )
 }
 
@@ -62,10 +67,7 @@ const Header = ({ siteTitle }) => (
       <Vane11opeStyles>
         <img src={require('../images/vane11ope.png')} alt="" />
       </ Vane11opeStyles>
-      <TitleStyles>
-        {siteTitle}
-        <RandomFace />
-      </TitleStyles>
+      <Wave str = {siteTitle} />
     </div>
   </header>
 )
