@@ -31,7 +31,7 @@ function RandomFace() {
             paddingTop: '10vmin' 
         }}>
             <FaceStyles>
-            {face}
+                {face}
             </FaceStyles>
         </div>
     )
@@ -53,7 +53,7 @@ const Today = () => (
     <>
         <Container>
             <h1>きょうのヴァネロピ(とくに意味はない)</h1>
-            <RandomFace/>
+            <RandomFace />
         </Container>
     </>
 )

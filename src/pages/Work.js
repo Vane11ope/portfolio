@@ -1,7 +1,20 @@
 import React from "react"
 import { Link } from "gatsby"
 import SEO from "../components/seo"
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components"
+
+const Flash = keyframes`
+    0%, 25%, 75%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+`;
+
+const FlashStyles = styled.div` 
+  animation: ${Flash} 2s linear infinite;
+`;
 
 const Container = styled.div`
   width: 80vmin;
@@ -18,7 +31,9 @@ const Container = styled.div`
 const Work = () => (
   <>
     <Container>
-      <h1>じんせいのしんちょく</h1>
+      <FlashStyles>
+        <h1>じんせいのしんちょく</h1>
+      </FlashStyles>
     </Container>
   </>
 )
