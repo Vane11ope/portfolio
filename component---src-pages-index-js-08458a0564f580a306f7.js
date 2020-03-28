@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{RXBc:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),l=t.n(a),r=(t("Wbzz"),t("Bl7J")),c=t("vrFN");n.default=function(){return l.a.createElement(l.a.Fragment,null,l.a.createElement(c.a,{title:"ヴァネロピのポートフォリオ"}),l.a.createElement(r.a,null))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-08458a0564f580a306f7.js.map
