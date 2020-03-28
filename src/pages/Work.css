@@ -6,45 +6,59 @@
 
 #twitter img {
   position:absolute;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes twitterFadeInOut0 {
   0% {
     opacity:1;
+    margin-left: -100%;
   }
   49% {
     opacity:1;
+    margin-left: 100%;
+    transform: scaleX(1);
   }
   50% {
     opacity:0;
+    transform: scaleX(-1);
   }
   100% {
     opacity:0;
+    margin-left: -100%;
+    transform: scaleX(-1);
   }
 }
 
 @keyframes twitterFadeInOut1 {
   0% {
     opacity:0;
+    margin-left: -100%;
   }
   49% {
     opacity:0;
+    margin-left: 100%;
+    transform: scaleX(1);
   }
   50% {
     opacity:1;
+    transform: scaleX(-1);
   }
   100% {
     opacity:1;
+    margin-left: -100%;
+    transform: scaleX(-1);
   }
 }
 
 #twitter img.bottom {
-animation-name: twitterFadeInOut0;
-    animation-iteration-count: infinite;
-animation-duration: 1s;
+  animation-name: twitterFadeInOut0;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
 }
 #twitter img.top{
-    animation-name: twitterFadeInOut1;
-animation-iteration-count: infinite;
-animation-duration: 1s;
+  animation-name: twitterFadeInOut1;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
 }

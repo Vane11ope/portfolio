@@ -31,12 +31,12 @@ const Container = styled.div`
 
 const twitterIcon = () => {
   return (
-    <a href="https://twitter.com/vane11ope">
-      <div id="twitter">
+    <div id="twitter">
+      <a href="https://twitter.com/vane11ope">
         <img class="bottom" src={require('../images/twitter_0.png')} alt="" />
         <img class="top" src={require('../images/twitter_1.png')} alt="" />
-      </div>
-    </a>
+      </a>
+    </div>
   )
 }
 
