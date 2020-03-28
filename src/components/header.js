@@ -58,8 +58,7 @@ const Header = ({ siteTitle }) => (
         flexDirection: 'row',
         alignItems: 'center',
         fontSize: '2.25rem',
-        width: '100vw',
-        justifyContent: 'center'
+        justifyContent: 'center',
       }}
     >
       <Vane11opeStyles>
