@@ -12,9 +12,9 @@ const Vane11opeWave = keyframes`
 
 const TitleWave = keyframes`
   0% { transform: rotate(0deg); }
-  65% { transform: rotate(0deg); }
-  75% { transform: rotate(20deg); }
-  85% { transform: rotate(0deg); }
+  35% { transform: rotate(0deg); }
+  45% { transform: rotate(20deg); }
+  55% { transform: rotate(0deg); }
 `;
 
 const Vane11opeStyles = styled.div` 
