@@ -62,3 +62,56 @@
   animation-iteration-count: infinite;
   animation-duration: 2s;
 }
+
+#github {
+  position:relative;
+  height:256px;
+  width:256px;
+}
+
+#github img {
+  position:absolute;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes githubFadeInOut0 {
+  0% {
+    opacity:1;
+  }
+  49% {
+    opacity:1;
+  }
+  50% {
+    opacity:0;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@keyframes githubFadeInOut1 {
+  0% {
+    opacity:0;
+  }
+  49% {
+    opacity:0;
+  }
+  50% {
+    opacity:1;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+#github img.bottom {
+  animation-name: githubFadeInOut0;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+#github img.top{
+  animation-name: githubFadeInOut1;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}

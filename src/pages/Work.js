@@ -40,11 +40,23 @@ const twitterIcon = () => {
   )
 }
 
+const githubIcon = () => {
+  return (
+    <div id="github">
+      <a href="https://github.com/vane11ope">
+        <img class="bottom" src={require('../images/github_0.png')} alt="" />
+        <img class="top" src={require('../images/github_1.png')} alt="" />
+      </a>
+    </div >
+  )
+}
+
 const Work = () => (
   <>
     <Container>
       <h1>じんせいのしんちょく</h1>
       {twitterIcon()}
+      {githubIcon()}
     </Container>
   </>
 )
