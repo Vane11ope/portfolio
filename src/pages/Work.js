@@ -51,12 +51,23 @@ const githubIcon = () => {
   )
 }
 
+const hatenaIcon = () => {
+  return (
+    <a href="http://vane11ope.hatenablog.com">
+      <img src={require('../images/hatena.png')} alt="" />
+    </a>
+  )
+}
+
 const Work = () => (
   <>
     <Container>
       <h1>じんせいのしんちょく</h1>
       {twitterIcon()}
       {githubIcon()}
+      <FlashStyles>
+        {hatenaIcon()}
+      </FlashStyles>
     </Container>
   </>
 )
