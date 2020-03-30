@@ -1,7 +1,7 @@
 #twitter {
   position:relative;
-  height:256px;
-  width:256px;
+  height:24vmin;
+  width:24vmin;
 }
 
 #twitter img {
@@ -65,8 +65,9 @@
 
 #github {
   position:relative;
-  height:256px;
-  width:256px;
+  height:24vmin;
+  width:24vmin;
+  margin-top: 3vmin;
 }
 
 #github img {

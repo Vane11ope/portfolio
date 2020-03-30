@@ -54,7 +54,7 @@ const githubIcon = () => {
 const hatenaIcon = () => {
   return (
     <a href="http://vane11ope.hatenablog.com">
-      <img src={require('../images/hatena.png')} alt="" />
+      <img src={require('../images/hatena.png')} alt="" style={{ width: '24vmin', height: '24vmin', marginTop: '3vmin'}} />
     </a>
   )
 }
