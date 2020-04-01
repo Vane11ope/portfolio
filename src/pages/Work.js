@@ -60,6 +60,15 @@ const hatenaIcon = () => {
   )
 }
 
+const planktonIcon = () => {
+  return (
+    <div class="tooltip">
+      <img src={require('../images/planktonsummit.svg')} alt="" style={{ width: '24vmin', height: '24vmin'}} />
+      <span class="tooltiptext">今サイト作ってます<br />ごめんなさい...</span>
+    </div>
+  )
+}
+
 class Work extends React.Component {
   constructor(props) {
     super(props);
@@ -99,6 +108,7 @@ class Work extends React.Component {
         <FlashStyles>
           {hatenaIcon()}
         </FlashStyles>
+        {planktonIcon()}
       </Container>
     );
   }
