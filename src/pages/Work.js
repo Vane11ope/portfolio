@@ -1,9 +1,8 @@
 import React from "react"
 import MediaQuery from 'react-responsive';
 import { Link } from "gatsby"
-import SEO from "../components/seo"
 import styled, { keyframes } from "styled-components"
-import "./Work.css"
+import "./Work.scss"
 
 const Flash = keyframes`
     0%, 25%, 75%, 100% {
