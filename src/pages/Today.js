@@ -28,7 +28,7 @@ function RandomFace() {
         <div style={{
             fontFamily: 'sans-serif',
             fontSize: '8vmin',
-            paddingTop: '5vmin' 
+            paddingTop: '7vmin' 
         }}>
             <FaceStyles>
                 {face}
@@ -39,7 +39,7 @@ function RandomFace() {
 
 const Container = styled.div`
   width: 80vmin;
-  height: 35vh;
+  height: 60vmin;
   margin-top: 10vh;
   padding-top: 5vh;
   display: flex;
@@ -52,8 +52,9 @@ const Container = styled.div`
 const Today = () => (
     <>
         <Container>
-            <h1>きょうのヴァネロピ(とくに意味はない)</h1>
+            <h1>きょうのヴァネロピ</h1>
             <RandomFace />
+            <h2 style = {{marginLeft: '50%', marginTop: '20%'}}>※ とくに意味はない</h2>
         </Container>
     </>
 )

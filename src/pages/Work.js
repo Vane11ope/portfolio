@@ -1,4 +1,5 @@
 import React from "react"
+import MediaQuery from 'react-responsive';
 import { Link } from "gatsby"
 import SEO from "../components/seo"
 import styled, { keyframes } from "styled-components"
@@ -19,7 +20,7 @@ const FlashStyles = styled.div`
 
 const Container = styled.div`
   width: 80vmin;
-  height: 128vh;
+  height: 135vmin; 
   margin-top: 10vh;
   padding-top: 3vh;
   display: flex;
@@ -59,17 +60,48 @@ const hatenaIcon = () => {
   )
 }
 
-const Work = () => (
-  <>
-    <Container>
-      <h1>じんせいのしんちょく</h1>
-      {twitterIcon()}
-      {githubIcon()}
-      <FlashStyles>
-        {hatenaIcon()}
-      </FlashStyles>
-    </Container>
-  </>
-)
+class Work extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isLandscape: false,
+    };
+  }
+
+  updateDimensions() {
+  }
+
+  componentDidMount() {
+    this.updateDimensions();
+    window.addEventListener("resize", this.updateDimensions.bind(this));
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateDimensions.bind(this));
+  }
+
+  componentWillUpdate() {
+    window.removeEventListener("resize", this.updateDimensions.bind(this));
+  }
+  render() {
+    return (
+      <Container>
+        <MediaQuery maxDeviceWidth={1224}>
+          {(matches) =>
+            matches
+              ? this.isLandscape = false
+              : this.isLandscape = true
+          }
+        </MediaQuery>
+        <h1>じんせいのしんちょく</h1>
+        {twitterIcon()}
+        {githubIcon()}
+        <FlashStyles>
+          {hatenaIcon()}
+        </FlashStyles>
+      </Container>
+    );
+  }
+}
 
 export default Work

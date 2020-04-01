@@ -243,7 +243,7 @@ h2 {
   color: inherit;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.62671rem;
+  font-size: 3vmin;
   line-height: 1.1;
 }
 h3 {
@@ -258,7 +258,7 @@ h3 {
   color: inherit;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.38316rem;
+  font-size: 2vmin;
   line-height: 1.1;
 }
 h4 {
