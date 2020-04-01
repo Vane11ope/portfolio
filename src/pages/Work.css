@@ -33,7 +33,7 @@
   }
   50% {
     opacity:0;
-    margin-top: 340%;
+    margin-top: 600%;
     margin-left: 100%;
     transform: scaleX(-1);
   }
@@ -46,7 +46,7 @@
     transform: scaleX(1);
   }
   75% {
-    margin-top: 340%;
+    margin-top: 600%;
     margin-left: -100%;
   }
   99% {
@@ -81,7 +81,7 @@
   }
   50% {
     opacity:1;
-    margin-top: 340%;
+    margin-top: 600%;
     margin-left: 100%;
   }
   73% {
@@ -93,7 +93,7 @@
     transform: scaleX(1);
   }
   75% {
-    margin-top: 340%;
+    margin-top: 600%;
     margin-left: -100%;
   }
   99% {
