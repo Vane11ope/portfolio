@@ -1,0 +1,53 @@
+#mail {
+  position:relative;
+  height:24vmin;
+  width:24vmin;
+  margin-top: 3vmin;
+}
+
+#mail img {
+  position:absolute;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes mailFadeInOut0 {
+  0% {
+    opacity:1;
+  }
+  49% {
+    opacity:1;
+  }
+  50% {
+    opacity:0;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@keyframes mailFadeInOut1 {
+  0% {
+    opacity:0;
+  }
+  49% {
+    opacity:0;
+  }
+  50% {
+    opacity:1;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+#mail img.bottom {
+  animation-name: mailFadeInOut0;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+#mail img.top{
+  animation-name: mailFadeInOut1;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}

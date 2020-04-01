@@ -12,6 +12,7 @@ import Header from "./header"
 import "./layout.css"
 import Work from "../pages/Work"
 import Today from "../pages/Today"
+import Contact from "../pages/Contact"
 
 const Layout = ({}) => {
   const data = useStaticQuery(graphql`
@@ -39,6 +40,7 @@ const Layout = ({}) => {
       >
       <Today />
       <Work />
+      <Contact />
       </div>
     </>
   )
