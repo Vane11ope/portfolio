@@ -20,7 +20,7 @@ const FlashStyles = styled.div`
 
 const Container = styled.div`
   width: 80vmin;
-  height: 135vmin; 
+  height: 190vmin; 
   margin-top: 10vh;
   padding-top: 3vh;
   display: flex;
@@ -69,6 +69,16 @@ const planktonIcon = () => {
   )
 }
 
+const sharkIcon = () => {
+  return (
+    <div id="shark">
+      <a href="https://twitter.com/shark_coder">
+        <img src={require('../images/samepro.png')} alt="" style={{ width: '24vmin', height: '24vmin'}} />
+      </a>
+    </div>
+  )
+}
+
 class Work extends React.Component {
   constructor(props) {
     super(props);
@@ -109,6 +119,7 @@ class Work extends React.Component {
           {hatenaIcon()}
         </FlashStyles>
         {planktonIcon()}
+        {sharkIcon()}
       </Container>
     );
   }
