@@ -19,7 +19,7 @@ const FlashStyles = styled.div`
 
 const Container = styled.div`
   width: 80vmin;
-  height: 150vh;
+  height: 128vh;
   margin-top: 10vh;
   padding-top: 3vh;
   display: flex;

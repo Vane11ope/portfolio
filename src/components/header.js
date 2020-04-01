@@ -48,18 +48,18 @@ const Header = ({ siteTitle }) => (
   <header
     style={{
       background: `rgb(153, 61, 6)`,
-      marginBottom: `1.45rem`,
+      marginBottom: `5vmin`,
     }}
   >
     <div
       style={{
         margin: `0 auto`,
-        padding: `1.45rem 1.0875rem`,
+        padding: `4vmin 4vmin`,
         color: 'rgb(249, 239, 232)',
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
-        fontSize: '2.25rem',
+        fontSize: '5vmin',
         justifyContent: 'center',
       }}
     >

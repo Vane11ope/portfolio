@@ -27,8 +27,8 @@ function RandomFace() {
     return (
         <div style={{
             fontFamily: 'sans-serif',
-            fontSize: '3rem',
-            paddingTop: '10vmin' 
+            fontSize: '8vmin',
+            paddingTop: '5vmin' 
         }}>
             <FaceStyles>
                 {face}
@@ -39,9 +39,9 @@ function RandomFace() {
 
 const Container = styled.div`
   width: 80vmin;
-  height: 60vh;
+  height: 35vh;
   margin-top: 10vh;
-  padding-top: 3vh;
+  padding-top: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
