@@ -1,6 +1,5 @@
 import React from "react"
 import MediaQuery from 'react-responsive';
-import { Link } from "gatsby"
 import styled, { keyframes } from "styled-components"
 import "./Work.scss"
 
@@ -61,10 +60,9 @@ const hatenaIcon = () => {
 
 const planktonIcon = () => {
   return (
-    <div class="tooltip">
-      <img src={require('../images/planktonsummit.svg')} alt="" style={{ width: '24vmin', height: '24vmin'}} />
-      <span class="tooltiptext">今サイト作ってます<br />ごめんなさい...</span>
-    </div>
+    <a href="https://plankton-summit.netlify.com/">
+      <img src={require('../images/planktonsummit.svg')} alt="" style={{ width: '24vmin', height: '24vmin' }} />
+    </a>
   )
 }
 
